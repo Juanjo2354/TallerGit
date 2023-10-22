@@ -1,4 +1,4 @@
-from operations import minus
+from operations import module
 
 
 def game():
@@ -6,7 +6,7 @@ def game():
     while True:
         print(
             '======== Menu ========'
-            '\n1. Minus'
+            '\n1. Module'
             '\n0. Exit'
             )
         option = int(input('\nChoice an option: '))
@@ -19,9 +19,9 @@ def game():
         answer = int(input('Enter you answer: '))
 
         if option == 1:
-            result = add(num_1, num_2)
+            result = module(num_1, num_2)
         if result == answer:
-            score += 1
+            score += 4
             print('Correct!!')
         else:
             print('Incorrect')
