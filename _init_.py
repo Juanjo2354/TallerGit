@@ -1,4 +1,4 @@
-from operations import add
+from operations import minus
 
 
 def game():
@@ -6,7 +6,7 @@ def game():
     while True:
         print(
             '======== Menu ========'
-            '\n1. Add'
+            '\n1. Minus'
             '\n0. Exit'
             )
         option = int(input('\nChoice an option: '))
