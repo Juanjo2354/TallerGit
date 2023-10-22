@@ -6,7 +6,7 @@ def game():
     while True:
         print(
             '======== Menu ========'
-            '\n1. Minus'
+            '\n1. Division'
             '\n0. Exit'
             )
         option = int(input('\nChoice an option: '))
