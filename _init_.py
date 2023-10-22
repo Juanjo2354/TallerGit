@@ -1,4 +1,4 @@
-from operations import minus
+from operations import div
 
 
 def game():
@@ -19,9 +19,9 @@ def game():
         answer = int(input('Enter you answer: '))
 
         if option == 1:
-            result = add(num_1, num_2)
+            result = div(num_1, num_2)
         if result == answer:
-            score += 1
+            score += 2
             print('Correct!!')
         else:
             print('Incorrect')
