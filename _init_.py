@@ -1,4 +1,4 @@
-from operations import minus
+from operations import add, minus, mult, div, power, module
 
 
 def game():
@@ -6,7 +6,12 @@ def game():
     while True:
         print(
             '======== Menu ========'
-            '\n1. Minus'
+            '\n1. Add'
+            '\n2. Minus'
+            '\n3. Multiplication'
+            '\n4. Division'
+            '\n5. Power'
+            '\n6. Module'
             '\n0. Exit'
             )
         option = int(input('\nChoice an option: '))
@@ -22,6 +27,46 @@ def game():
             result = add(num_1, num_2)
         if result == answer:
             score += 1
+            print('Correct!!')
+        else:
+            print('Incorrect')
+
+        if option == 2:
+            result = minus(num_1, num_2)
+        if result == answer:
+            score += 1
+            print('Correct!!')
+        else:
+            print('Incorrect')
+
+        if option == 3:
+            result = mult(num_1, num_2)
+        if result == answer:
+            score += 2
+            print('Correct!!')
+        else:
+            print('Incorrect')
+
+        if option == 4:
+            result = div(num_1, num_2)
+        if result == answer:
+            score += 2
+            print('Correct!!')
+        else:
+            print('Incorrect')
+
+        if option == 5:
+            result = power(num_1, num_2)
+        if result == answer:
+            score += 4
+            print('Correct!!')
+        else:
+            print('Incorrect')
+
+        if option == 6:
+            result = module(num_1, num_2)
+        if result == answer:
+            score += 4
             print('Correct!!')
         else:
             print('Incorrect')
